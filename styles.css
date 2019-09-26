@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px 25px;
+}
+
+.question {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.question-box {
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 4px rgba(30, 56, 56, 0.5);
+    border-radius: 5px;
+}
+
+.form-input {
+    transition: 0.3s ease;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid darkslategray;
+    padding: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.checkbox-group {
+    flex-grow: 1;
+    align-content: center;
+}
+
+.radio {
+    margin-right: 30px;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+button {
+    background: #20B2AA;
+    border: none;
+    padding: 10px 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    margin-top: 10px;
+}
+
+.incorrect {
+    color: lightcoral;
+}
+
+.correct {
+    color: #20B2AA;
+}
+
+.totalScore {
+    margin: 15px 0;
+    color: #20B2AA;
+    font-size: 22px;
+}
+
+.open {
+    padding: 10px 0;
+    animation: open 0.3s 1 linear forwards;
+}
+
+@keyframes open {
+    0% {
+        max-height: 0;
+    }
+    100% {
+        max-height: 90px;
+    }
+}
